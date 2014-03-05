@@ -30,7 +30,7 @@ end # module WineDb
 module WorldDb
   module Model
 
-  Person   = PersonDb::Model::Wine
+  Person   = PersonDb::Model::Person
 
   end
 end
