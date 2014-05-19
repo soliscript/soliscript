@@ -3,8 +3,13 @@
 
 require 'active_record'   ## todo: add sqlite3? etc.
 
+require 'activerecord/utils'   # check - if dependency on logutils? or props? etc let others go first
+
 require 'logutils'
 require 'textutils'
+require 'tagutils'
+require 'props'
+require 'props/db'  # includes ConfDb (ConfDb::Model::Prop, etc.)
 require 'worlddb'
 
 

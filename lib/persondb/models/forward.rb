@@ -4,17 +4,16 @@
 module PersonDb
   module Model
 
-  ## todo: why? why not use include WorldDb::Models here???
+    ## todo: why? why not use include WorldDb::Models here???
+    Continent = WorldDb::Model::Continent
+    Country   = WorldDb::Model::Country
+    Region    = WorldDb::Model::Region
+    City      = WorldDb::Model::City
 
-  Continent = WorldDb::Model::Continent
-  Country   = WorldDb::Model::Country
-  Region    = WorldDb::Model::Region
-  City      = WorldDb::Model::City
+    Tagging   = TagDb::Model::Tagging
+    Tag       = TagDb::Model::Tag
 
-  Tag       = WorldDb::Model::Tag
-  Tagging   = WorldDb::Model::Tagging
-
-  Prop      = WorldDb::Model::Prop
+    Prop      = ConfDb::Model::Prop
 
   class Person < ActiveRecord::Base ; end
 
@@ -24,13 +23,11 @@ module PersonDb
   ##  e.g lets you use include PersonDb::Models
   Models = Model
 
-end # module WineDb
+end # module PersonDb
 
 
 module WorldDb
   module Model
-
-  Person   = PersonDb::Model::Person
-
+    Person   = PersonDb::Model::Person
   end
 end

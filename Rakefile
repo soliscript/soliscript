@@ -18,7 +18,14 @@ Hoe.spec 'persondb' do
   self.history_file = 'HISTORY.md'
 
   self.extra_deps = [
-    ['logutils', '>= 0.5']
+    ['props' ],
+    ['logutils'],
+    ['textutils'],
+    ['worlddb'],
+    ['tagutils'],             # tags n tagging tables
+    ['activerecord-utils'],   # extras e.g. rnd, find_by! for 3.x etc.
+    ## 3rd party
+    ['activerecord']  # NB: will include activesupport,etc.
   ]
 
   self.licenses = ['Public Domain']

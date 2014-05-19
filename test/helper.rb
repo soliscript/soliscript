@@ -16,10 +16,6 @@ require 'json'
 require 'uri'
 require 'pp'
 
-# ruby gems
-
-require 'active_record'
-
 # our own code
 
 require 'persondb'
@@ -56,6 +52,8 @@ def setup_in_memory_db
   ## build schema
 
   LogDb.create
+  ConfDb.create
+  TagDb.create
   WorldDb.create
   PersonDb.create
 end

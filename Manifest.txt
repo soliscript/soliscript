@@ -10,3 +10,5 @@ lib/persondb/models/worlddb/country.rb
 lib/persondb/models/worlddb/region.rb
 lib/persondb/schema.rb
 lib/persondb/version.rb
+test/helper.rb
+test/test_models.rb
