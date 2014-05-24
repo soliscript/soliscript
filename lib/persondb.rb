@@ -1,26 +1,17 @@
 # encoding: utf-8
 
 # core and stdlibs
+#  todo: check already included in worlddb - thus, remove? why? why not?
 require 'json'
 require 'uri'
 require 'pp'
 
 
 # 3rd party gems / libs
-require 'active_record'   ## todo: add sqlite3? etc.
+require 'worlddb'    # note: let worlddb pull in all 3rd party gems / libs (do NOT duplicate here)
 
-require 'activerecord/utils'   # check - if dependency on logutils? or props? etc let others go first
-
-require 'logutils'
-require 'logutils/db'   # NB: explict require required for LogDb (NOT automatic)
-
-require 'textutils'
-require 'tagutils'
-
-require 'props'
-require 'props/db'  # NB: explict require required for LogDb (NOT automatic); includes ConfDb (ConfDb::Model::Prop, etc.)
-
-require 'worlddb'
+## fix: add/move to worlddb
+require 'logutils/db'
 
 
 ### our own code
@@ -30,9 +21,9 @@ require 'persondb/schema'
 
 require 'persondb/models/forward'
 
-require 'persondb/models/worlddb/city'
-require 'persondb/models/worlddb/region'
-require 'persondb/models/worlddb/country'
+require 'persondb/models/world/city'
+require 'persondb/models/world/region'
+require 'persondb/models/world/country'
 
 require 'persondb/models/person'
 require 'persondb/reader'

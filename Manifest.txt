@@ -5,9 +5,9 @@ Rakefile
 lib/persondb.rb
 lib/persondb/models/forward.rb
 lib/persondb/models/person.rb
-lib/persondb/models/worlddb/city.rb
-lib/persondb/models/worlddb/country.rb
-lib/persondb/models/worlddb/region.rb
+lib/persondb/models/world/city.rb
+lib/persondb/models/world/country.rb
+lib/persondb/models/world/region.rb
 lib/persondb/reader.rb
 lib/persondb/schema.rb
 lib/persondb/version.rb

@@ -15,7 +15,7 @@ module PersonDb
 
     Prop      = ConfDb::Model::Prop
 
-  class Person < ActiveRecord::Base ; end
+    class Person < ActiveRecord::Base ; end
 
   end # module Model
 

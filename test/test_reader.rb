@@ -13,7 +13,7 @@ class TestReader < MiniTest::Unit::TestCase
 
   def add_world
     ## add some counties
-    br = Country.create!( key: 'br', title: 'Brazil', code: 'BRA', pop: 0, area: 0 )
+    Country.create!( key: 'br', title: 'Brazil', code: 'BRA', pop: 0, area: 0 )
   end
 
   def test_read
@@ -24,6 +24,11 @@ class TestReader < MiniTest::Unit::TestCase
 
     assert_equal  23, Person.count
     assert_equal  23, br.persons.count
+    
+    jefferson = Person.find_by_key!( 'jefferson' )
+    assert_equal 'Jefferson De Oliveira Galvao', jefferson.synonyms
+    ## todo: add more asserts - use assert_persons ?
+
   end
 
 end # class TestReader
