@@ -3,7 +3,7 @@
 require 'helper'
 
 
-class TestReader < MiniTest::Unit::TestCase
+class TestReader < MiniTest::Test
 
   def setup  # runs before every test
     PersonDb.delete!   # always clean-out tables
@@ -19,8 +19,9 @@ class TestReader < MiniTest::Unit::TestCase
   def test_read
     br = Country.find_by_key!( 'br' )
 
-    reader = PersonReader.new( PersonDb.test_data_path )
-    reader.read( 'players/south-america/br-brazil/players',  country_id: br.id )
+    path = "#{PersonDb.test_data_path}/players/south-america/br-brazil/players.txt"
+    reader = PersonReader.from_file( path, country_id: br.id )
+    reader.read()
 
     assert_equal  23, Person.count
     assert_equal  23, br.persons.count

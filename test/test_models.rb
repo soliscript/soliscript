@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestModels < MiniTest::Unit::TestCase
+class TestModels < MiniTest::Test
 
   def setup  # runs before every test
     PersonDb.delete!   # always clean-out tables

@@ -5,10 +5,10 @@ Hoe.spec 'persondb' do
 
   self.version = PersonDb::VERSION
 
-  self.summary = 'persondb - person schema n models for easy (re)use'
+  self.summary = "persondb - person schema 'n' models for easy (re)use"
   self.description = summary
 
-  self.urls    = ['https://github.com/geraldb/person.db.ruby']
+  self.urls    = ['https://github.com/persondb/person.db.ruby']
 
   self.author  = 'Gerald Bauer'
   self.email   = 'webslideshow@googlegroups.com'
@@ -21,7 +21,7 @@ Hoe.spec 'persondb' do
     ['props' ],
     ['logutils'],
     ['textutils'],
-    ['worlddb'],
+    ['worlddb-models'],
     ['tagutils'],             # tags n tagging tables
     ['activerecord-utils'],   # extras e.g. rnd, find_by! for 3.x etc.
     ## 3rd party
@@ -31,8 +31,8 @@ Hoe.spec 'persondb' do
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   :required_ruby_version => '>= 1.9.2'
+   required_ruby_version: '>= 1.9.2'
   }
 
-
 end
+

@@ -1,17 +1,8 @@
 # encoding: utf-8
 
-# core and stdlibs
-#  todo: check already included in worlddb - thus, remove? why? why not?
-require 'json'
-require 'uri'
-require 'pp'
-
 
 # 3rd party gems / libs
-require 'worlddb'    # note: let worlddb pull in all 3rd party gems / libs (do NOT duplicate here)
-
-## fix: add/move to worlddb
-require 'logutils/db'
+require 'worlddb/models'    # note: let worlddb pull in all 3rd party gems / libs (do NOT duplicate here)
 
 
 ### our own code
@@ -83,6 +74,5 @@ module PersonDb
 
 end  # module PersonDb
 
-
-puts PersonDb.banner    # say hello
-
+# say hello
+puts PersonDb.banner  if $DEBUG || (defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG)  

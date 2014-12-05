@@ -1,9 +1,9 @@
 # persondb
 
-persondb gems - person schema n models for easy (re) use
+persondb gems - person schema 'n' models for easy (re) use
 
-* home  :: [github.com/geraldb/person.db.ruby](https://github.com/geraldb/person.db.ruby)
-* bugs  :: [github.com/geraldb/person.db.ruby/issues](https://github.com/geraldb/person.db.ruby/issues)
+* home  :: [github.com/persondb/person.db.ruby](https://github.com/persondb/person.db.ruby)
+* bugs  :: [github.com/persondb/person.db.ruby/issues](https://github.com/persondb/person.db.ruby/issues)
 * gem   :: [rubygems.org/gems/persondb](https://rubygems.org/gems/persondb)
 * rdoc  :: [rubydoc.info/gems/persondb](http://rubydoc.info/gems/persondb)
 
