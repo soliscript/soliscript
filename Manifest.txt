@@ -2,7 +2,7 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
-lib/persondb.rb
+lib/persondb/models.rb
 lib/persondb/models/forward.rb
 lib/persondb/models/person.rb
 lib/persondb/models/world/city.rb

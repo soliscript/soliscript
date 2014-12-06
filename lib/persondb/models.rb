@@ -1,5 +1,6 @@
 # encoding: utf-8
 
+require 'logger'
 
 # 3rd party gems / libs
 require 'worlddb/models'    # note: let worlddb pull in all 3rd party gems / libs (do NOT duplicate here)
@@ -22,14 +23,6 @@ require 'persondb/reader'
 
 
 module PersonDb
-
-  def self.banner
-    "persondb/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
-  end
-
-  def self.root
-    "#{File.expand_path( File.dirname(File.dirname(__FILE__)) )}"
-  end
 
   def self.test_data_path
     "#{root}/test/data"

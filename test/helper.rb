@@ -7,7 +7,8 @@ require 'minitest/autorun'
 
 # our own code
 
-require 'persondb'
+require 'persondb/models'
+
 
 ################
 # shortcuts

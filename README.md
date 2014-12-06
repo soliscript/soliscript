@@ -1,11 +1,11 @@
-# persondb
+# persondb-models
 
-persondb gems - person schema 'n' models for easy (re) use
+persondb-models gem - person.db schema 'n' models for easy (re)use
 
-* home  :: [github.com/persondb/person.db.ruby](https://github.com/persondb/person.db.ruby)
-* bugs  :: [github.com/persondb/person.db.ruby/issues](https://github.com/persondb/person.db.ruby/issues)
-* gem   :: [rubygems.org/gems/persondb](https://rubygems.org/gems/persondb)
-* rdoc  :: [rubydoc.info/gems/persondb](http://rubydoc.info/gems/persondb)
+* home  :: [github.com/persondb/person.db.models](https://github.com/persondb/person.db.models)
+* bugs  :: [github.com/persondb/person.db.models/issues](https://github.com/persondb/person.db.models/issues)
+* gem   :: [rubygems.org/gems/persondb-models](https://rubygems.org/gems/persondb-models)
+* rdoc  :: [rubydoc.info/gems/persondb-models](http://rubydoc.info/gems/persondb-models)
 
 ## Usage
 
@@ -30,5 +30,5 @@ TBD
 
 ## License
 
-The `persondb` scripts are dedicated to the public domain.
+The `persondb-models` scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
