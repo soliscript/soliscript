@@ -24,7 +24,7 @@ create_table :persons do |t|
   ## todo: add country of birth  might not be the same as nationality
 
   t.references  :city
-  t.references  :region
+  t.references  :state
   t.references  :country      ## ,  null: false
 
   t.references  :nationality  ## , null: false  # by default assume same as country of birth (see above)

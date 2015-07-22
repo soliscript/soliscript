@@ -14,7 +14,7 @@ require 'persondb/schema'
 require 'persondb/models/forward'
 
 require 'persondb/models/world/city'
-require 'persondb/models/world/region'
+require 'persondb/models/world/state'
 require 'persondb/models/world/country'
 
 require 'persondb/models/person'
@@ -68,4 +68,4 @@ module PersonDb
 end  # module PersonDb
 
 # say hello
-puts PersonDb.banner  if $DEBUG || (defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG)  
+puts PersonDb.banner  if defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG

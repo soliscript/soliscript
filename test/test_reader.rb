@@ -17,11 +17,11 @@ class TestReader < MiniTest::Test
   end
 
   def test_read
-    br = Country.find_by_key!( 'br' )
+    br = Country.find_by!( key: 'br' )
 
     path = "#{PersonDb.test_data_path}/players/south-america/br-brazil/players.txt"
     reader = PersonReader.from_file( path, country_id: br.id )
-    reader.read()
+    reader.read
 
     assert_equal  23, Person.count
     assert_equal  23, br.persons.count

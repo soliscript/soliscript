@@ -7,7 +7,7 @@ module PersonDb
     ## todo: why? why not use include WorldDb::Models here???
     Continent = WorldDb::Model::Continent
     Country   = WorldDb::Model::Country
-    Region    = WorldDb::Model::Region
+    State     = WorldDb::Model::State
     City      = WorldDb::Model::City
 
     Tagging   = TagDb::Model::Tagging

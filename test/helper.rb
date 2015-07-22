@@ -13,7 +13,7 @@ require 'persondb/models'
 ################
 # shortcuts
 Country = WorldDb::Model::Country
-Region  = WorldDb::Model::Region
+State   = WorldDb::Model::State
 City    = WorldDb::Model::City
 
 ## todo: get all models aliases (e.g. from console script)
