@@ -1,0 +1,7 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+lib/soliscript.rb
+lib/soliscript/simulacrum.rb
+lib/soliscript/version.rb
