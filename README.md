@@ -10,7 +10,7 @@ soliscript - run blockchain contracts in rubidity (with 100%-solidity compatible
 
 
 
-## What's Solidity?!  ## What's Rubidity?!
+## What's Solidity?!  What's Rubidity?!
 
 See [**Solidity - Contract Application Binary Interface (ABI) Specification** »](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
